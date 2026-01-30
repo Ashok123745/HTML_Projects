@@ -1,0 +1,122 @@
+<!-- Course Registration Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This is a Course Registration Form">
+<meta name="keywords" content="course,form,course registration,reg form">
+    <title>Course Registration Form</title>
+</head>
+
+<body>
+    <h1>Course Registration Form</h1>
+    <form action="">
+        <!-- for Align count row -->
+         <!-- name and value must Give because backend will recevie -->
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <table>
+
+                <tr>
+                    <td><label for="FN">First Name</label></td>
+                    <td><input type="text" name="FN" id="FN" maxlength="15" placeholder="Ex.Ashok" required></td>
+                </tr>
+                <tr>
+                    <td><label for="SN">Sur Name</label></td>
+                    <td> <input type="text" name="SN" id="SN" placeholder="Ex.Deva" required></td>
+                </tr>
+                <tr>
+                    <td> <label for="MN">Mobile Number</label></td>
+                    <td><input type="tel" name="MN" id="MN" placeholder="Ex. + 91 8309112610" required></td>
+                </tr>
+                <tr>
+                    <td><label for="EMAIL">Email</label></td>
+                    <td> <input type="email" name="EMAIL" id="EMAIL" placeholder="Ex.ashokdeva077@gmail.com" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Password">Password</label></td>
+                    <td><input type="password" name="Password" id="Password" placeholder="min 5 characters" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Confirm Password">Confirm Password</label></td>
+                    <td> <input type="password" name="Confirm Password" id="Confirm Password"
+                            placeholder="min 5 characters" required></td>
+                </tr>
+                <tr>
+                    <td><label for="DOB">DOB</label></td>
+                    <td> <input type="date" name="DOB" id="DOB" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Gender">Gender</label></td>
+                    <td><input type="radio" name="Gender" value="Male" required>Male
+                        <input type="radio" name="Gender" value="Female" required>Female
+                        <input type="radio" name="Gender" value="Others" required>Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Select Country">Select Country</label></td>
+                    <td><select>
+                            <option value=" none">Select Country</option>
+                            <option value="INDIA" required>INDIA</option>
+                            <option value="CANADA" required>CANADA</option>
+                            <option value="RUSSIA" required>RUSSIA</option>
+
+                        </select></td>
+
+                </tr>
+                <tr>
+                    <td><label for="Upload Picture">Upload Picture</label></td>
+                    <td><input type="file" name="Upload Picture" id="Upload Picture" required></td>
+                </tr>
+            </table>
+            <button type="reset">CLICK TO RESET</button><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Course Details</legend>
+
+            <table>
+                <tr>
+                    <td><label for="Select Course">Select Course</label></td>
+                    <td> <select>
+                            <option value="Select Course">Select Course</option>
+                            <option value="PYTHON FULL STACK" required>PYTHON FULL STACK</option>
+                            <option value="JAVA FULL STACK" required>JAVA FULL STACK</option>
+                            <option value="AWS" required>AWS</option>
+                            <option value="Cloud Computing" required>Cloud Computing</option>
+                            <option value="Artificial Intelligence" required>Artificial Intelligence</option>
+                            <option value="Data Science" required>Data Science</option>
+                            <option value="Machine Learning" required>Machine Learning</option>
+                            <option value="Cyber Security" required>Cyber Security</option>
+                            <option value="Data Analytics" required>Data Analytics</option>
+                            <option value="Quantum Computing" required>Quantum Computing</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Delivery Mode">Delivery Mode</label></td>
+                    <td><input type="checkbox" name="Delivery Mode" value="Offline" required>Offline
+                        <input type="checkbox" name="Delivery Mode" value="Online" required>Online
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Comments</label></td>
+                    <td><textarea style="resize: none;" rows="5" cols="30"></textarea></td>
+                </tr>
+            </table>
+            <button type="submit">Click to submit</button>
+        </fieldset>
+
+
+    </form>
+
+</body>
+
+</html>
